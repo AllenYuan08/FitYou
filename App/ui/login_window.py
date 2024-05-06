@@ -1,162 +1,88 @@
 import sys
-from PyQt5.uic import loadUi
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PySide6 import QtGui, QtWidgets, QtCore
 
-######## Data Base Connection ########
-import mysql.connector
+from ui.Sign_Up import Ui_Dialog as Signup
+from ui.welcome_window import Ui_Dialog
+import App.modules.fitness as fitness
+import App.modules.diet as diet
+import App.modules.login as login
+from ui.main_window import MainApplication as MainUI
 
+class MainApplication(QtWidgets.QMainWindow):
+    show_signup_signal = QtCore.Signal()  # 自定义信号
 
-########### welcome.ui #########
-
-class WelcomeScreen(QDialog):
     def __init__(self):
-        super(WelcomeScreen, self).__init__()
-        loadUi("welcome_window.ui",self)
-        self.addimage()
-        self.Signup.clicked.connect(self.signup)
-        self.Login.clicked.connect(self.login)
+        super(MainApplication, self).__init__()
+        self.ui = Ui_Dialog()
+        self.ui.setupUi(self)
+        self.setup_connections()
+        self.main_application = None
+        
+        self.signup_window = SignUP()
+        self.signup_window.show_login_signal.connect(self.show)  # 连接信号
+        self.show_signup_signal.connect(self.signup_window.show)  # 连接信号
 
-    def addimage(self):
-        qp=QPixmap("blur.jpg")
-        self.label.setPixmap(qp)
-
+    def setup_connections(self):
+        self.ui.Signup.clicked.connect(self.show_signup_signal.emit)  # 发射信号
+        self.ui.Login.clicked.connect(self.login)
+        
     def login(self):
-        user=self.username.text()
-        pwd=self.password.text()
-        if len(user)==0 or len(pwd)==0:
-            self.error.setText("Incorrect credentials")
+        username = str(self.ui.username.text())
+        password = str(self.ui.password.text())
+        
+        if login.validate_login(username, password):
+            QtWidgets.QMessageBox.information(self, "Success", "You have successfully logged in!")
+            self.open_main_application(username)
         else:
-            try:
-                # connecting to DB and validating the Uname and pwd
-                mydb = mysql.connector.connect(
-                    host='localhost',
-                    user='Mysql user',
-                    passwd='Enter Your password',
-                    port='Your default port',
-                    database='test')
-                cur=mydb.cursor()
-                cur.execute('SELECT * from account_details where Username=%s and Password=%s'
-                       ,(user,pwd))
-                if cur.fetchone():
-                    self.error.setText("successfull")
-                    obj = DashBoard()
-                    widget.addWidget(obj)
-                    widget.setCurrentIndex(widget.currentIndex() + 1)
+            QtWidgets.QMessageBox.warning(self, "Error", "Invalid username or password. Please try again.")
+    
+    def open_main_application(self, username):
+        if not self.main_application:
+            self.main_application = MainUI(username)  # 创建MainApplication实例
+        self.hide()  # 隐藏登录窗口
+        self.main_application.show()  # 显示主窗口
+    
 
-                else:
-                    self.error.setText("Incorrect credentials or Pwd")
-            except Exception as es:
-                print("Error")
+        
+class SignUP(QtWidgets.QMainWindow):
+    show_login_signal = QtCore.Signal()  # 自定义信号
 
-
-    def signup(self):
-        obj = SignUp()
-        widget.addWidget(obj)
-        widget.setCurrentIndex(widget.currentIndex() + 1)
-
-
-
-
-########### Dashboard.ui #########
-
-class DashBoard(QDialog):
     def __init__(self):
-        super(DashBoard, self).__init__()
-        loadUi("DashBoard.ui",self)
-        self.addimage()
-        self.Exit.clicked.connect(self.exit)
+        super(SignUP, self).__init__()
+        self.ui = Signup()
+        self.ui.setupUi(self)
+        self.setup_connections()
 
-    def addimage(self):
-        qp = QPixmap("blur.jpg")
-        self.label.setPixmap(qp)
-
-    def exit(self):
-        obj=WelcomeScreen()
-        widget.addWidget(obj)
-        widget.setCurrentIndex(widget.currentIndex()+1)
-
-
-########### signup.ui #########
-
-class SignUp(QDialog):
-    def __init__(self):
-        super(SignUp, self).__init__()
-        loadUi("Sign_Up.ui", self)
-        self.addimage()
-        self.Signup_2.clicked.connect(self.goback)
-        self.Signup.clicked.connect(self.signup)
-
-    def addimage(self):
-        qp = QPixmap("blur.jpg")
-        self.label.setPixmap(qp)
-
-    def goback(self):
-        obj=WelcomeScreen()
-        widget.addWidget(obj)
-        widget.setCurrentIndex(widget.currentIndex()+1)
-
+    def setup_connections(self):
+        self.ui.Signup.clicked.connect(self.signup)
+        self.ui.Signup_2.clicked.connect(self.go_back)
+        
     def signup(self):
-        name = self.name.text()
-        Phnum = self.phnum.text()
-        pwd = self.password.text()
-        user = self.username.text()
-        confirmpwd = self.confirmPassword.text()
-        if (len(name) and len(Phnum) and len(pwd) and len(user)
-            and len(confirmpwd)) == 0:
-            self.error.setText("Please fill all Credentials")
+        name = self.ui.name.text()
+        phnum = self.ui.phnum.text()
+        username = self.ui.username.text()
+        password = self.ui.password.text()
+        confirm_password = self.ui.confirmPassword.text()
+        if password == confirm_password:
+            login.sign_up(name, phnum, username, password, confirm_password)
+            QtWidgets.QMessageBox.information(self, 'Success', 'Registration successful!')
+            self.create_user_database(username)
+            self.show_login_signal.emit()  # 发射信号返回登录窗口
         else:
-            if pwd == confirmpwd:
-                try:
-                    mydb = mysql.connector.connect(
-                        host='localhost',
-                        user='root',
-                        passwd='kumar',
-                        port='3306',
-                        database='test')
-                    cur = mydb.cursor()
-                    id_query="SELECT max(id) from test.account_details"
-                    cur.execute(id_query)
-                    R=cur.fetchone()
-                    if R!=None and R[0]!=None:
-                        id=int(R[0])+1
-                    cur = mydb.cursor()
-                    sql="insert into test.account_details(id,Name,PhNum,Username,Password) values(%s, %s, %s, %s, %s)"
-                    cur.execute(sql,(id,name,Phnum,user,pwd))
-                    mydb.commit()
-                    if cur.fetchone():
-                        self.error.setText("ERROR")
-                    else:
-                         self.error.setText("Sign Up Successfull ")
-                         self.error.setStyleSheet("color:green")
-                         self.error.setFont(QFont('MS Shell Dlg 2', 14))
+            QtWidgets.QMessageBox.warning(self, 'Error', 'Passwords do not match. Please try again.')
+            
+    def go_back(self):
+        self.hide()
+        self.show_login_signal.emit()  # 发射信号
+        
+    def create_user_database(self, username):
+        excel_file_path1 = "./Data/Database_files/Fitness_Records.xlsx"
+        login.create_databases_for_user(username, excel_file_path1, sheet_name="Fitness_Records")
+        excel_file_path2 = "./Data/Database_files/Diet_Records.xlsx"
+        login.create_databases_for_user(username, excel_file_path2, sheet_name="Diet_Records")
 
-                except Exception as es:
-                    print("error")
-                    self.error.setText("ERROR ")
-            else:
-                self.error.setText("Passwords don't match")
-
-
-########### MAIN CODE #########
-#The code below are mandatory to launch the PyQt APP
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    welcome= WelcomeScreen()
-    widget = QStackedWidget()
-    widget.addWidget(welcome)
-    widget.setFixedHeight(875)
-    widget.setFixedWidth(1125)
-    widget.show()
-    try:
-        sys.exit((app.exec()))
-    except:
-        print("exiting")
-
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    window = MainApplication()
+    window.show()
+    sys.exit(app.exec())

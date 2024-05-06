@@ -33,7 +33,7 @@
      <enum>QTabWidget::TabShape::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="iconSize">
      <size>
@@ -56,7 +56,7 @@
     <widget class="QWidget" name="tab_2">
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/User.png</normaloff>../../../Data/Icon/User.png</iconset>
+       <normaloff>../../../Data/UI_icons/User.png</normaloff>../../../Data/UI_icons/User.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -71,7 +71,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
@@ -94,7 +94,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../Data/Icon/User.png</normaloff>../../../Data/Icon/User.png</iconset>
+             <normaloff>../../../Data/UI_icons/User.png</normaloff>../../../Data/UI_icons/User.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -295,71 +295,11 @@
          <string>Today's Fitness Record!!! Keep Going!!!</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_4">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>60</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_5">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>100</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_6">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>140</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_7">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>180</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_8">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>220</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_9">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>260</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QPushButton" name="pushButton_5">
         <property name="geometry">
          <rect>
-          <x>300</x>
-          <y>300</y>
+          <x>320</x>
+          <y>310</y>
           <width>121</width>
           <height>51</height>
          </rect>
@@ -368,83 +308,949 @@
          <string>Save All</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>60</y>
-          <width>16</width>
-          <height>21</height>
+          <x>60</x>
+          <y>70</y>
+          <width>641</width>
+          <height>221</height>
          </rect>
         </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_2">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>100</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_3">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>140</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_4">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>180</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_5">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>220</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_6">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>260</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Sports</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Time</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QComboBox" name="comboBox_2">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tennis</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Badminton</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Swimming</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Treadmill</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Squat</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Leg Curls</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lateral Raise</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Biceps Curl</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Abdominal Crunch</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sit-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Parallels Bars Arm Support</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Deadlifts</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Push-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Jogging</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brisk Walking</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cycling</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Skipping</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Aerobics</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Yoga</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pilates</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>HIIT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Rowing Machine</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bobbi Jump</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Basketball</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Elliptical Training</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_3">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>35min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>40min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>55min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2h</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QComboBox" name="comboBox_4">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tennis</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Badminton</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Swimming</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Treadmill</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Squat</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Leg Curls</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lateral Raise</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Biceps Curl</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Abdominal Crunch</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sit-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Parallels Bars Arm Support</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Deadlifts</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Push-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Jogging</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brisk Walking</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cycling</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Skipping</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Aerobics</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Yoga</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pilates</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>HIIT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Rowing Machine</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bobbi Jump</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Basketball</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Elliptical Training</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_5">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>35min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>40min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>55min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2h</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QComboBox" name="comboBox_6">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tennis</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Badminton</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Swimming</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Treadmill</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Squat</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Leg Curls</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lateral Raise</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Biceps Curl</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Abdominal Crunch</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sit-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Parallels Bars Arm Support</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Deadlifts</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Push-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Jogging</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brisk Walking</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cycling</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Skipping</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Aerobics</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Yoga</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pilates</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>HIIT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Rowing Machine</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bobbi Jump</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Basketball</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Elliptical Training</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_7">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>35min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>40min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>55min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2h</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QComboBox" name="comboBox_8">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tennis</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Badminton</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Swimming</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Treadmill</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Squat</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Leg Curls</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lateral Raise</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Biceps Curl</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Abdominal Crunch</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sit-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Parallels Bars Arm Support</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Deadlifts</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Push-ups</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Jogging</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brisk Walking</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cycling</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Skipping</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Aerobics</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Yoga</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pilates</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>HIIT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Rowing Machine</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bobbi Jump</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Basketball</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Elliptical Training</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_9">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>35min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>40min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>55min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h15min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h30min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1h45min</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2h</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_9">
@@ -467,44 +1273,11 @@
          <string>Today's Diet Record!!! Hold On!!!</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_10">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>60</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_7">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>180</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_11">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>100</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QPushButton" name="pushButton_6">
         <property name="geometry">
          <rect>
-          <x>300</x>
-          <y>300</y>
+          <x>310</x>
+          <y>310</y>
           <width>121</width>
           <height>51</height>
          </rect>
@@ -513,110 +1286,909 @@
          <string>Save All</string>
         </property>
        </widget>
-       <widget class="QCheckBox" name="checkBox_8">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>260</y>
-          <width>16</width>
-          <height>21</height>
+          <x>50</x>
+          <y>80</y>
+          <width>641</width>
+          <height>211</height>
          </rect>
         </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_9">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>60</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_12">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>140</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_13">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>220</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_14">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>260</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_10">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>220</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_15">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>180</y>
-          <width>631</width>
-          <height>21</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_11">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>140</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QCheckBox" name="checkBox_12">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>100</y>
-          <width>16</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Diet</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>Weight</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QComboBox" name="comboBox_10">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Flour</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Peas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chinese Cabbage</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Fungus</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kelp</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pumkins</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Apples</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cherries</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bananas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Almonds</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Beef</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Liver</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Milk</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Eggs</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tomato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Broccoli</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chicken Breast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cods</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Loin</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Salmon</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lamb Shank</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brown Rice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Black Beans</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sweet Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Soba Noodles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Carrot</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kale</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Spinach</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_11">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>100g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>200g</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QComboBox" name="comboBox_12">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Flour</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Peas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chinese Cabbage</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Fungus</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kelp</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pumkins</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Apples</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cherries</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bananas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Almonds</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Beef</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Liver</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Milk</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Eggs</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tomato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Broccoli</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chicken Breast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cods</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Loin</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Salmon</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lamb Shank</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brown Rice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Black Beans</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sweet Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Soba Noodles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Carrot</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kale</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Spinach</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_13">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>100g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>200g</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <widget class="QComboBox" name="comboBox_14">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Flour</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Peas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chinese Cabbage</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Fungus</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kelp</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pumkins</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Apples</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cherries</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bananas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Almonds</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Beef</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Liver</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Milk</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Eggs</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tomato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Broccoli</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chicken Breast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cods</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Loin</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Salmon</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lamb Shank</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brown Rice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Black Beans</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sweet Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Soba Noodles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Carrot</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kale</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Spinach</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_15">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>100g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>200g</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QComboBox" name="comboBox_16">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Flour</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Peas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chinese Cabbage</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Fungus</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kelp</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pumkins</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Apples</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cherries</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bananas</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Almonds</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Beef</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Liver</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Milk</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Eggs</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Tomato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Broccoli</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chicken Breast</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Cods</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pork Loin</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Salmon</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lamb Shank</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Brown Rice</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Black Beans</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sweet Potato</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Soba Noodles</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Carrot</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kale</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Spinach</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_17">
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>50g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>100g</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>200g</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
       </widget>
      </widget>
@@ -624,7 +2196,7 @@
     <widget class="QWidget" name="tab_3">
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/Sport.png</normaloff>../../../Data/Icon/Sport.png</iconset>
+       <normaloff>../../../Data/UI_icons/Sport.png</normaloff>../../../Data/UI_icons/Sport.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -747,7 +2319,7 @@
     <widget class="QWidget" name="tab_4">
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/Diet.png</normaloff>../../../Data/Icon/Diet.png</iconset>
+       <normaloff>../../../Data/UI_icons/Diet.png</normaloff>../../../Data/UI_icons/Diet.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -807,11 +2379,210 @@
          </item>
         </layout>
        </widget>
-      </widget>
-      <widget class="QWidget" name="tab_13">
-       <attribute name="title">
-        <string>Food_Library</string>
-       </attribute>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>280</y>
+          <width>151</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Identify</string>
+        </property>
+       </widget>
+       <widget class="QListView" name="listView">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>280</y>
+          <width>371</width>
+          <height>131</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_18">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>20</y>
+          <width>316</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flour</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Peas</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Chinese Cabbage</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fungus</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kelp</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pumkins</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Apples</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cherries</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bananas</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Almonds</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Beef</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pork Liver</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pork</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Milk</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Eggs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Potato</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tomato</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Broccoli</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Chicken Breast</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cods</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pork Loin</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Salmon</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lamb Shank</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brown Rice</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Black Beans</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sweet Potato</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Soba Noodles</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Carrot</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kale</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Spinach</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>20</y>
+          <width>181</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>You can choose your food!</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -824,7 +2595,7 @@
      </property>
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/Calendar.png</normaloff>../../../Data/Icon/Calendar.png</iconset>
+       <normaloff>../../../Data/UI_icons/Calendar.png</normaloff>../../../Data/UI_icons/Calendar.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -860,7 +2631,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Data/Icon/FitYou_UI_Background.png</pixmap>
+     <pixmap>../../../Data/UI_icons/FitYou_UI_Background.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -884,7 +2655,7 @@ background-color: transparent;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Data/Icon/New_icon.png</pixmap>
+     <pixmap>../../../Data/UI_icons/New_icon.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -919,7 +2690,7 @@ QPushButton:hover{
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../Data/Icon/Close.png</normaloff>../../../Data/Icon/Close.png</iconset>
+      <normaloff>../../../Data/UI_icons/Close.png</normaloff>../../../Data/UI_icons/Close.png</iconset>
     </property>
     <property name="checkable">
      <bool>false</bool>
@@ -948,7 +2719,7 @@ QPushButton:hover{
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../Data/Icon/Minimize.png</normaloff>../../../Data/Icon/Minimize.png</iconset>
+      <normaloff>../../../Data/UI_icons/Minimize.png</normaloff>../../../Data/UI_icons/Minimize.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -977,7 +2748,7 @@ QPushButton:hover{
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../../../Data/icons.qrc"/>
+  <include location="../icons.qrc"/>
  </resources>
  <connections/>
 </ui>

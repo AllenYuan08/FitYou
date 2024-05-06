@@ -1,0 +1,129 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'Sign_Up.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QDialog, QLabel, QLineEdit,
+    QPushButton, QSizePolicy, QWidget)
+import os, sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+import App.configs.icons_rc
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        if not Dialog.objectName():
+            Dialog.setObjectName(u"Dialog")
+        Dialog.resize(1114, 867)
+        self.label = QLabel(Dialog)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(-6, -5, 1131, 881))
+        # self.label.setStyleSheet(u"background-image:url(:/images/blur.jpg)")
+        # self.label.setPixmap(QPixmap(u"../../../Data/UI_icons/blur.jpg"))
+        self.label.setScaledContents(True)
+        self.label_2 = QLabel(Dialog)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(500, 10, 141, 71))
+        self.label_2.setStyleSheet(u"font: 75 24pt \"MS Shell Dlg 2\";")
+        self.label_3 = QLabel(Dialog)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(210, 220, 121, 31))
+        self.label_3.setStyleSheet(u"font: 14pt \"Lucida Fax\";")
+        self.label_4 = QLabel(Dialog)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(210, 280, 121, 31))
+        self.label_4.setStyleSheet(u"font: 14pt \"Lucida Fax\";")
+        self.name = QLineEdit(Dialog)
+        self.name.setObjectName(u"name")
+        self.name.setGeometry(QRect(460, 220, 261, 31))
+        self.name.setStyleSheet(u"font: 14pt \"MS Shell Dlg 2\";")
+        self.phnum = QLineEdit(Dialog)
+        self.phnum.setObjectName(u"phnum")
+        self.phnum.setGeometry(QRect(460, 280, 261, 31))
+        self.phnum.setStyleSheet(u"font: 14pt \"MS Shell Dlg 2\";")
+        self.phnum.setEchoMode(QLineEdit.EchoMode.Normal)
+        self.Signup = QPushButton(Dialog)
+        self.Signup.setObjectName(u"Signup")
+        self.Signup.setGeometry(QRect(500, 630, 121, 51))
+        self.Signup.setStyleSheet(u"background-color:transparent;\n"
+"font: 75 14pt \"MS Shell Dlg 2\";\n"
+"border-radius:20px;\n"
+"border-style:solid;\n"
+"border-color:black;\n"
+"\n"
+"border-width:4px;\n"
+"")
+        self.label_5 = QLabel(Dialog)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(210, 340, 121, 31))
+        self.label_5.setStyleSheet(u"font: 14pt \"Lucida Fax\";")
+        self.username = QLineEdit(Dialog)
+        self.username.setObjectName(u"username")
+        self.username.setGeometry(QRect(460, 340, 261, 31))
+        self.username.setStyleSheet(u"font: 14pt \"MS Shell Dlg 2\";")
+        self.password = QLineEdit(Dialog)
+        self.password.setObjectName(u"password")
+        self.password.setGeometry(QRect(460, 400, 261, 31))
+        self.password.setStyleSheet(u"font: 14pt \"MS Shell Dlg 2\";")
+        self.password.setEchoMode(QLineEdit.EchoMode.Password)
+        self.label_6 = QLabel(Dialog)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(210, 400, 121, 31))
+        self.label_6.setStyleSheet(u"font: 14pt \"Lucida Fax\";")
+        self.label_7 = QLabel(Dialog)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setGeometry(QRect(210, 460, 221, 31))
+        self.label_7.setStyleSheet(u"font: 14pt \"Lucida Fax\";")
+        self.confirmPassword = QLineEdit(Dialog)
+        self.confirmPassword.setObjectName(u"confirmPassword")
+        self.confirmPassword.setGeometry(QRect(460, 460, 261, 31))
+        self.confirmPassword.setStyleSheet(u"font: 14pt \"MS Shell Dlg 2\";")
+        self.confirmPassword.setEchoMode(QLineEdit.EchoMode.Password)
+        self.Signup_2 = QPushButton(Dialog)
+        self.Signup_2.setObjectName(u"Signup_2")
+        self.Signup_2.setGeometry(QRect(930, 780, 121, 51))
+        self.Signup_2.setStyleSheet(u"background-color:transparent;\n"
+"font: 75 14pt \"MS Shell Dlg 2\";\n"
+"border-radius:20px;\n"
+"border-style:solid;\n"
+"border-color:black;\n"
+"\n"
+"border-width:4px;\n"
+"")
+        self.error = QLabel(Dialog)
+        self.error.setObjectName(u"error")
+        self.error.setGeometry(QRect(420, 540, 331, 21))
+        self.error.setStyleSheet(u"font: 14pt \"MS Shell Dlg 2\";\n"
+"color:rgb(255, 0, 0)")
+        self.error.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.retranslateUi(Dialog)
+
+        QMetaObject.connectSlotsByName(Dialog)
+    # setupUi
+
+    def retranslateUi(self, Dialog):
+        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"FitYouLogin", None))
+        self.label.setText("")
+        self.label_2.setText(QCoreApplication.translate("Dialog", u"Sign Up ", None))
+        self.label_3.setText(QCoreApplication.translate("Dialog", u"Name", None))
+        self.label_4.setText(QCoreApplication.translate("Dialog", u"Ph No:", None))
+        self.Signup.setText(QCoreApplication.translate("Dialog", u"Sign Up", None))
+        self.label_5.setText(QCoreApplication.translate("Dialog", u"Username: ", None))
+        self.label_6.setText(QCoreApplication.translate("Dialog", u"Password:", None))
+        self.label_7.setText(QCoreApplication.translate("Dialog", u"Confirm Password", None))
+        self.Signup_2.setText(QCoreApplication.translate("Dialog", u"Go Back", None))
+        self.error.setText("")
+    # retranslateUi
+

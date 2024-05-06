@@ -1,0 +1,44 @@
+<RCC>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/blur.jpg</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/mountains.jpg</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Calculater.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Calendar.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Camera.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Close.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Diet.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/FitYou_logo.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/FitYou_UI_Background.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Minimize.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/New_icon.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Sport.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/User.png</file>
+  </qresource>
+  <qresource prefix="/Icon">
+    <file>../../Data/UI_icons/Video.png</file>
+  </qresource>
+</RCC>

@@ -29,7 +29,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../Data/Icon/blur.jpg</pixmap>
+    <pixmap>../../../Data/UI_icons/blur.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -273,8 +273,8 @@ color:rgb(255, 0, 0)</string>
   </widget>
  </widget>
  <resources>
-  <include location="../../../Data/icons.qrc"/>
-  <include location="../../../Data/icons.qrc"/>
+  <include location="../icons.qrc"/>
+  <include location="../icons.qrc"/>
  </resources>
  <connections/>
 </ui>

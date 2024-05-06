@@ -76,8 +76,8 @@ border-width:4px;
   </widget>
  </widget>
  <resources>
-  <include location="../../../Data/icons.qrc"/>
-  <include location="../../../Data/icons.qrc"/>
+  <include location="../icons.qrc"/>
+  <include location="../icons.qrc"/>
  </resources>
  <connections/>
 </ui>

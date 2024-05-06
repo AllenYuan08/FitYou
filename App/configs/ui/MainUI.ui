@@ -56,7 +56,7 @@
     <widget class="QWidget" name="tab_2">
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/User.png</normaloff>../../../Data/Icon/User.png</iconset>
+       <normaloff>../../../Data/UI_icons/User.png</normaloff>../../../Data/UI_icons/User.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -94,7 +94,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../Data/Icon/User.png</normaloff>../../../Data/Icon/User.png</iconset>
+             <normaloff>../../../Data/UI_icons/User.png</normaloff>../../../Data/UI_icons/User.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -2196,7 +2196,7 @@
     <widget class="QWidget" name="tab_3">
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/Sport.png</normaloff>../../../Data/Icon/Sport.png</iconset>
+       <normaloff>../../../Data/UI_icons/Sport.png</normaloff>../../../Data/UI_icons/Sport.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -2319,7 +2319,7 @@
     <widget class="QWidget" name="tab_4">
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/Diet.png</normaloff>../../../Data/Icon/Diet.png</iconset>
+       <normaloff>../../../Data/UI_icons/Diet.png</normaloff>../../../Data/UI_icons/Diet.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -2595,7 +2595,7 @@
      </property>
      <attribute name="icon">
       <iconset>
-       <normaloff>../../../Data/Icon/Calendar.png</normaloff>../../../Data/Icon/Calendar.png</iconset>
+       <normaloff>../../../Data/UI_icons/Calendar.png</normaloff>../../../Data/UI_icons/Calendar.png</iconset>
      </attribute>
      <attribute name="title">
       <string/>
@@ -2631,7 +2631,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Data/Icon/FitYou_UI_Background.png</pixmap>
+     <pixmap>../../../Data/UI_icons/FitYou_UI_Background.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2655,7 +2655,7 @@ background-color: transparent;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Data/Icon/New_icon.png</pixmap>
+     <pixmap>../../../Data/UI_icons/New_icon.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2690,7 +2690,7 @@ QPushButton:hover{
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../Data/Icon/Close.png</normaloff>../../../Data/Icon/Close.png</iconset>
+      <normaloff>../../../Data/UI_icons/Close.png</normaloff>../../../Data/UI_icons/Close.png</iconset>
     </property>
     <property name="checkable">
      <bool>false</bool>
@@ -2719,7 +2719,7 @@ QPushButton:hover{
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../Data/Icon/Minimize.png</normaloff>../../../Data/Icon/Minimize.png</iconset>
+      <normaloff>../../../Data/UI_icons/Minimize.png</normaloff>../../../Data/UI_icons/Minimize.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -2748,7 +2748,7 @@ QPushButton:hover{
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../../../Data/icons.qrc"/>
+  <include location="../icons.qrc"/>
  </resources>
  <connections/>
 </ui>
